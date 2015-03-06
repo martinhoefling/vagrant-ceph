@@ -1,0 +1,36 @@
+Host ceph-mon1
+    HostName 192.168.1.51
+    User ceph
+    
+Host ceph-mon2
+    HostName 192.168.1.52
+    User ceph
+    
+Host ceph-mon3
+    HostName 192.168.1.53
+    User ceph
+ 
+            
+Host ceph-mds1
+    HostName 192.168.1.151
+    User ceph
+    
+Host ceph-mds2
+    HostName 192.168.1.152
+    User ceph
+    
+Host ceph-mds3
+    HostName 192.168.1.153
+    User ceph
+       
+Host ceph-osd1
+    HostName 192.168.1.101
+    User ceph
+    
+Host ceph-osd2
+    HostName 192.168.1.102
+    User ceph
+    
+Host ceph-osd3
+    HostName 192.168.1.103
+    User ceph
