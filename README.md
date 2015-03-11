@@ -25,4 +25,5 @@ Each node has
 
 * Starting all instances: ```vagrant up```
 * SSH into ceph-admin: ```vagrant ssh ceph-admin```
+* For the setup, the ceph user should be used ```sudo ceph```
 * Set up manually or via script: ```/vagrant/scripts/create_ceph_cluster.sh```
