@@ -19,7 +19,7 @@ done
 
 wget -q -O- 'https://ceph.com/git/?p=ceph.git;a=blob_plain;f=keys/release.asc' | apt-key add -
 
-apt-add-repository 'deb http://ceph.com/debian-firefly/ trusty main'
+apt-add-repository 'deb http://eu.ceph.com/debian-giant/ trusty main'
 #apt-add-repository 'deb http://ceph.com/packages/ceph-extras/debian trusty main'
 #apt-add-repository 'deb http://gitbuilder.ceph.com/apache2-deb-trusty-x86_64-basic/ref/master trusty main'
 #apt-add-repository 'deb http://gitbuilder.ceph.com/libapache-mod-fastcgi-deb-trusty-x86_64-basic/ref/master trusty main'
@@ -30,4 +30,4 @@ apt-get install -y ceph-deploy
 cd /home/ceph
 sudo -u ceph ssh-keyscan -H localhost >> /home/ceph/.ssh/known_hosts
 chown ceph:ceph /home/ceph/.ssh/known_hosts
-sudo -u ceph HOME=/home/ceph ceph-deploy install localhost
+sudo -u ceph HOME=/home/ceph ceph-deploy install --repo-url http://eu.ceph.com/debian-giant/ localhost
